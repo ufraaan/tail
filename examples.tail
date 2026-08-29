@@ -1,0 +1,24 @@
+# Tail example programs.
+#
+# Each line is an independent expression. Comments start with '#'.
+
+# Basic reversed function-call syntax.
+hello world("print")
+
+# Numbers.
+5("square")
+
+# Multiple arguments.
+10, 20("add")
+
+# Quoted strings.
+"hello", "world"("concat")
+
+# Chaining: the result of each call feeds the next.
+"hello world"("upper")("print")
+
+# Chaining numbers.
+2("square")("square")
+
+# Nested semantics: square(add(3, 4)).
+3, 4("add")("square")
